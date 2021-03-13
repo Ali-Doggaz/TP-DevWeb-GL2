@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- Bootstrap 4.6.0 CSS : -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+		
+    <div style="height: 100vh; width: 100%; display: flex; justify-content:center; align-items: center;">
+    <div>
+    <h1 style="color: white; font-family: ;text-align:center;margin:40px;color: rgb(218, 247, 166)">Bienvenue au jeu du chiffre cach&eacute;!</h1> 
+    <div class="container mt-2 pt-4 pb-4">
+    <!-- Games Instructions : -->
+				<div class="row">
+					<div class="col">
+						<!-- Button, toogles accordion : -->
+						<button class="btn btn-info align-middle pt-2 pb-1"
+								type="button" 
+								data-toggle="collapse" 
+								data-target="#collapseExample" 
+								aria-expanded="false" 
+								aria-controls="collapseExample"
+                                style = "margin:50px;">
+								<h6 class="text-uppercase align-middle">
+									Instructions <span class="hand">&#128072;</span>
+								</h6>
+						</button>
+						<!-- Accordion with ordered list : -->
+						<div class="collapse" id="collapseExample">
+							<div class="card card-body">
+								<ol>
+									<li>Marre des triple-A games? Envie de vous amuser? Bienvenue au jeu du chiffre cach&eacute;!</li>
+                                    <li>Le jeu est tres simple: notre equipe d'ing&eacute;nieurs g&eacute;n&eacute;rera, rien que pour vous, un nombre mystere!</li>
+                                    <li>Le nombre en question sera compris entre 0 et 15!</li>
+                                    <li>Votre mission, si vous l'acceptez, sera de deviner ce nombre!</li>
+									<li>En cliquant sur l'un des boutons ci-dessous, vous pourrez lancer votre partie tout en choisissant votre difficult&eacute;</li>
+									<li>Facile: 10 essais, Moyen: 5 essais, Difficile: 3 essais</li>
+								</ol>
+								<p class="text-right">Enjoy! &#x1F604</p>
+							</div>
+						</div>
+					</div>
+				</div>
+    
+    <script type="text/javascript" src="./main.js"> </script>
+    <ul style="display:flex; text-align:center;justify-content: center; margin:100px">     
+        <button onclick="startGame('Facile')" style="margin:0px 10px; background:rgb(37, 150, 190);color: white;height:50px;width:250px;">Facile</button>
+        <button onclick="startGame('Moyen')" style="margin:0px 10px; background: rgb(37, 150, 190);color: white;height:50px;width:250px;">Moyen</button>
+        <button onclick="startGame('Difficile')" style="margin:0px 10px; background: rgb(37, 150, 190);color: white;height:50px;width:250px;"> Difficile</button>
+    </ul>
+
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>

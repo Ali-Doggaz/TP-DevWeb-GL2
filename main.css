@@ -1,0 +1,15 @@
+/* ------- Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap");
+				
+				
+/* -------- Instructions accordion */
+	.card {
+	    background-color: #f5f5f5;
+		border: none;
+		font-family: 'Inconsolata', monospace;
+		font-weight: medium;
+	}
+     body{
+        background: url("./Background.jpg");
+        background-size: cover;
+    }
