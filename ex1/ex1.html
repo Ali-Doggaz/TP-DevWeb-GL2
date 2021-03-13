@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    function startGame(difficulty){
+        var correct_answer = Math.floor(Math.random() * 10);
+        // Determine le nombre d'essais restants, suivant la difficulté choisie.
+        switch(difficulty){
+            case 'Facile':
+                var essais_restants = 10;
+                break;
+            case 'Moyen':
+                var essais_restants = 5;
+                break;
+            case'Difficile':
+                var essais_restants = 3;  
+                break;
+        }
+        console.log(difficulty);
+
+    var answer = 0;
+    console.log(correct_answer);
+    while(essais_restants>0){
+        answer = prompt("Difficulte: " + difficulty + "\n Nombres d'essais restants: " + essais_restants, 0);
+        if (answer == correct_answer){
+            alert("Bravo, vous avez devine notre fameux nombre cache! Vous etes le meilleur!")
+            break;
+        }      
+        else{
+            essais_restants--;
+        }
+    }
+    if (!essais_restants){
+        alert("Il me semble que vous avez perdu...pas de chance!");
+    }
+
+    }
+</script>
+
+<h1 style="color: blue; text-align:center;">Bienvenue au jeu du chiffre cach&eacute;!</h1>
+<h2 style="color: blue; text-align:center;"> Veuillez choisir votre difficult&eacute;</h2>   
+<ul style="display:flex; text-align:center;justify-content: space-around;color: green;">     
+    <a onclick="startGame('Facile')"><li>Facile</li></a>
+    <a onclick="startGame('Moyen')"><li>Moyen</li></a>
+    <a onclick="startGame('Difficile')"><li>Difficile</li></a>
+ </ul>
+</body>
+</html>
